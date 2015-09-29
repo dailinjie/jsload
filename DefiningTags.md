@@ -1,0 +1,18 @@
+#How to Define Tags and Dependencies
+
+# Introduction #
+
+This page will provide a full spec of the tag definition language. It's pretty simple; the Project Home will give you a good idea of how to use this script.
+
+A quick note is simply that a "path" property can be passed along in the tag to override the path to the script, on a one-off basis. Example:
+
+```
+  var tags = [
+    { name : "baselib"
+    },
+    { name : "widget",
+      requires : ["baselib"],
+      path : "/some/other/dir/"
+    }
+  ]; 
+```
